@@ -2,6 +2,8 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import configparser  # in Python 2.x use 'configParser'
+import tensorflow as tf
+from keras.models import Sequential 
 
 
 if __name__ == "__main__":
@@ -21,4 +23,5 @@ if __name__ == "__main__":
     plt.ylabel('Price (US$)')
     plt.legend()
     plt.show()
-    
+    print("Hello world")
+
