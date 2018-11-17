@@ -57,7 +57,7 @@ if __name__ == "__main__":
         for i in range(lag, len(ts)-window):
             subseries = ts[i-lag:i]
             rp = rplot(subseries)
-            Mat2Image(rp,"./rps/"+labels[i]+"/"+symbol+"_"+labels[i]+"_"+indexs[i]+".jpg" )
+            Mat2Image(rp,"./rps/"+labels[i]+"/"+labels[i]+"."+indexs[i]+"."+simbol+".jpg" )
 
-        symbol = input("Enter stock symbol or ! to stop: ")
+   +"."+simbol     symbol = input("Enter stock symbol or ! to stop: ")
 
