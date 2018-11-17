@@ -59,5 +59,5 @@ if __name__ == "__main__":
             rp = rplot(subseries)
             Mat2Image(rp,"./rps/"+labels[i]+"/"+labels[i]+"."+indexs[i]+"."+symbol+".jpg" )
 
-            symbol = input("Enter stock symbol or ! to stop: ")
+        symbol = input("Enter stock symbol or ! to stop: ")
 
