@@ -41,15 +41,13 @@ if __name__ == "__main__":
     symbol = input("Enter stock symbol: ")
     window = 5 #used to label time series
 
-    filePath = folderPath+'/'+symbol+'.csv'
-
     os.makedirs("./rps/sell",exist_ok=True)
     os.makedirs("./rps/hold",exist_ok=True)
     os.makedirs("./rps/buy",exist_ok=True)
     
 
     while symbol != '!':
-        df = pd.read_csv (filePath, engine='python', sep=',')
+        df = pd.read_csv (folderPath+'/'+symbol+'.csv', engine='python', sep=',')
         ts = df["Adj Close"].values.astype('float32')
         labels = df["Labels"].values
         indexs = df["Date"].values
